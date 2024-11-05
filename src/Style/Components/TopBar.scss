@@ -1,0 +1,9 @@
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &Logo {
+        margin-left: 165px;
+    }
+}

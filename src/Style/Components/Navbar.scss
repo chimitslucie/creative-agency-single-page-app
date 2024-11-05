@@ -1,0 +1,40 @@
+.navbar {
+    background-color: $red;
+    display: flex;
+    align-items: center;
+    color: $white;
+    padding: 56px 165px 58px 69px;
+
+    &List {
+        display: flex;
+        align-items: center;
+
+        &Item {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-right: 32px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &Btn {
+        background-color: $blackBg;
+        padding: 23px 44px 22px 45px;
+        margin-left: 49px;
+        font-size: 16px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $blackHover;
+        }
+    }
+}
