@@ -2,6 +2,7 @@ import "./Style/Main.scss";
 import TopBar from "./Components/TopBar";
 import Hero from "./Components/Hero";
 import ImageText from "./Components/ImageText";
+import TitleText from "./Components/TitleText";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <TopBar />
       <Hero />
       <ImageText />
+      <TitleText />
     </div>
   );
 }

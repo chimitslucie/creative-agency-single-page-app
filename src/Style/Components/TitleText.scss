@@ -1,0 +1,61 @@
+.titleText {
+    display: flex;
+    position: relative;
+
+    &Title {
+        font-size: 56px;
+        font-weight: 800;
+        max-width: 540px;
+        margin-top: 200px;
+        display: block;
+        position: relative;
+        z-index: 2;
+        right: -150px;
+    }
+
+    &Content {
+        background-color: $red;
+        height: 1100px;
+        padding: 200px 0 0 285px;
+        width: 100%;
+        margin-top: -180px;
+        z-index: 1;
+
+        &Item {
+            margin-bottom: 56px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &Top {
+                display: flex;
+                align-items: baseline;
+            }
+
+            &Number {
+                font-size: 80px;
+                font-weight: 800;
+                color: $white;
+                opacity: 25%;
+            }
+
+            &Title {
+                font-size: 20px;
+                font-weight: 800;
+                color: $white;
+                margin-left: -40px;
+                text-transform: capitalize;
+            }
+
+            &Text {
+                font-size: 18px;
+                font-weight: 400;
+                color: $white;
+                margin-top: 12px;
+                width: 445px;
+                margin-left: 50px;
+            }
+        }
+    }
+}
