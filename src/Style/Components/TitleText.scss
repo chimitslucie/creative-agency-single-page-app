@@ -2,6 +2,14 @@
     display: flex;
     position: relative;
 
+    @media (max-width: 1000px) {
+        justify-content: space-between;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+    }
+
     &Title {
         font-size: 56px;
         font-weight: 800;
@@ -11,6 +19,25 @@
         position: relative;
         z-index: 2;
         right: -150px;
+
+        @media (max-width: 1130px) {
+            left: 39px;
+            max-width: 281px;
+            font-size: 32px;
+            margin-top: 126px;
+        }
+
+        @media (max-width: 750px) {
+            left: 20px;
+        }
+
+        @media (max-width: 640px) {
+            margin-top: 0;
+            color: $white;
+            max-width: 327px;
+            left: 24px;
+            top: 96px;
+        }
     }
 
     &Content {
@@ -21,8 +48,52 @@
         margin-top: -180px;
         z-index: 1;
 
+        @media (max-width: 1300px) {
+            padding-left: 200px;
+            padding-right: 40px;
+        }
+
+        @media (max-width: 1130px) {
+            margin-top: -120px;
+            padding-left: 150px;
+            height: 965px;
+        }
+
+        @media (max-width: 1000px) {
+            max-width: 630px;
+            padding-top: 120px;
+            height: 797px;
+        }
+
+        @media (max-width: 850px) {
+            padding-left: 43px;
+            max-width: 500px;
+        }
+
+        @media (max-width: 810px) {
+            max-width: 460px;
+        }
+
+        @media (max-width: 770px) {
+            max-width: 438px;
+        }
+
+        @media (max-width: 770px) {
+            max-width: 438px;
+        }
+
+        @media (max-width: 640px) {
+            max-width: 100%;
+            padding: 276px 24px 96px 24px;
+            height: 100%;
+        }
+
         &Item {
             margin-bottom: 56px;
+
+            @media (max-width: 1000px) {
+                margin-bottom: 40px;
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -46,6 +117,10 @@
                 color: $white;
                 margin-left: -40px;
                 text-transform: capitalize;
+
+                @media (max-width: 1000px) {
+                    font-size: 15px;
+                }
             }
 
             &Text {
@@ -55,6 +130,20 @@
                 margin-top: 12px;
                 width: 445px;
                 margin-left: 50px;
+
+                @media (max-width: 1000px) {
+                    font-size: 15px;
+                    margin-top: 5px;
+                    width: 339px;
+                }
+
+                @media (max-width: 850px) {
+                    margin-left: 0;
+                }
+
+                @media (max-width: 370px) {
+                    width: 311px;
+                }
             }
         }
     }
