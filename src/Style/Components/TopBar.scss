@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 640px) {
+        padding: 40px 24px;
+    }
+
     &Logo {
         margin-left: 165px;
 
@@ -17,5 +21,69 @@
         @media (max-width: 960px) {
             margin-left: 30px;
         }
+    }
+
+    &Burger {
+        width: 24px;
+        height: 18px;
+        background: transparent;
+        border: none;
+        color: inherit;
+        display: none;
+
+        @media (max-width: 640px) {
+            display: block;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+
+        &:hover {
+            @media (max-width: 640px) {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.showNav .navbar {
+    right: 26px;
+    width: 252px;
+    visibility: visible;
+}
+
+.burgerBar {
+    @media (max-width: 640px) {
+        display: block;
+        width: 24px;
+        height: 2px;
+        position: relative;
+        background-color: $burgerBar;
+        transition: all .5s ease-in-out;
+        margin-bottom: 6px;
+    }
+
+    &:last-child {
+        @media (max-width: 640px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.showNav .burgerBar:first-child {
+    @media (max-width: 640px) {
+        transform: translateY(8px) rotate(45deg);
+    }
+}
+
+.showNav .burgerBar:nth-child(2) {
+    @media (max-width: 640px) {
+        background-color: transparent;
+    }
+}
+
+.showNav .burgerBar:last-child {
+    @media (max-width: 640px) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
