@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Brand naming & guidelines",
+    "image": "/Slides/image-slide-1-desktop.jpg",
+    "alt": "hand holding a book",
+    "name": "lean product roadmap",
+    "date": "2019 Project"
+  },
+  {
+    "id": 2,
+    "title": "Brand identity & merchandise",
+    "image": "/Slides/image-slide-2-desktop.jpg",
+    "alt": "bag with a computer, a phone, pens",
+    "name": "new majestic hotel",
+    "date": "2018 Project"
+  },
+  {
+    "id": 3,
+    "title": "Brand identity & web design",
+    "image": "/Slides/image-slide-3-desktop.jpg",
+    "alt": "computer screen displaying a crypto table",
+    "name": "crypto dashboard",
+    "date": "2016 Project"
+  }
+]

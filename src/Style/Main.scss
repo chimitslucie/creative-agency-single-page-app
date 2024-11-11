@@ -4,9 +4,14 @@
 @import './Utils/Font.scss';
 @import './Utils/Reset.scss';
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 @import './Components/TopBar.scss';
 @import './Components/Navbar.scss';
 @import './Components/Hero.scss';
 @import './Components/ImageText.scss';
 @import './Components/TitleText.scss';
+@import './Components/SliderInfo.scss';
+@import './Components/SliderItem.scss';
 @import './Components/Footer.scss';

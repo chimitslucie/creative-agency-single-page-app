@@ -1,0 +1,194 @@
+.sliderItem {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+
+    @media (max-width: 1530px) {
+        padding-left: 70px;
+    }
+
+    @media (max-width: 1200px) {
+        padding-left: 0px;
+    }
+
+    @media (max-width: 676px) {
+        flex-direction: column-reverse;
+    }
+
+    &TitleContent {
+        background-color: $blackBg;
+        width: 735px;
+        height: 528px;
+        padding: 152px 125px 152px 165px;
+        margin-right: -180px;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: 1500px) {
+            padding: 152px 110px 152px 125px;
+        }
+
+        @media (max-width: 1435px) {
+            padding: 152px 100px 152px 100px;
+        }
+
+        @media (max-width: 1420px) {
+            width: 600px;
+            height: 450px;
+            padding-left: 50px;
+        }
+
+        @media (max-width: 1090px) {
+            width: 390px;
+            height: 352px;
+            padding: 100px 70px 100px 39px;
+            margin-right: -55px;
+        }
+
+        @media (max-width: 695px) {
+            padding-right: 50px;
+        }
+
+        @media (max-width: 676px) {
+            width: 100%;
+            height: 272px;
+            margin-right: 0;
+            padding: 64px 24px 128px 24px;
+        }
+
+        &Title {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 64px;
+            color: $white;
+
+            @media (max-width: 1090px) {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            @media (max-width: 730px) {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    &Wave {
+        position: absolute;
+        z-index: 3;
+        top: 175px;
+
+        @media (max-width: 1430px) {
+            left: 47%;
+        }
+
+        @media (max-width: 1435px) {
+            left: 50%;
+        }
+
+        @media (max-width: 1420px) {
+            left: 53%;
+        }
+
+        @media (max-width: 1200px) {
+            left: 48%;
+        }
+
+        @media (max-width: 1090px) {
+            width: 63px;
+            left: 46%;
+            top: 84px;
+        }
+
+        @media (max-width: 760px) {
+            left: 44%;
+        }
+
+        @media (max-width: 720px) {
+            left: 41%;
+        }
+
+        @media (max-width: 680px) {
+            left: 37%;
+        }
+
+        @media (max-width: 676px) {
+            display: none !important;
+        }
+    }
+
+    &ImgContent {
+        width: 895px;
+        position: relative;
+
+        @media (max-width: 1420px) {
+            width: 650px;
+        }
+
+        @media (max-width: 1090px) {
+            width: 438px;
+            height: 405px;
+        }
+
+        @media (max-width: 676px) {
+            width: 100%;
+            height: 404px;
+        }
+
+        &Img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &Info {
+            position: absolute;
+            bottom: 80px;
+            right: 154px;
+            text-align: end;
+            z-index: 3;
+
+            @media (max-width: 1420px) {
+                right: 80px;
+                bottom: 30px;
+            }
+
+            @media (max-width: 780px) {
+                bottom: 16px;
+            }
+
+            @media (max-width: 500px) {
+                right: 45px;
+            }
+        }
+
+        &Title {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 32px;
+            text-transform: capitalize;
+            color: $white;
+            margin-bottom: 5px;
+
+            @media (max-width: 780px) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+
+        &Text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $white;
+
+            @media (max-width: 780px) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+
+}
